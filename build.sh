@@ -7,7 +7,7 @@ docker run \
   /bin/bash -c " \
   git clone \
     -b leankernel-9.0 \
-    https://github.com/cawilliamson/samsung_sm907b_kernel \
+    https://github.com/cawilliamson/samsung_fold_kernel \
     /usr/src/kernel && \
   cd /usr/src/kernel && \
   bash build_kernel_${1}.sh && \
