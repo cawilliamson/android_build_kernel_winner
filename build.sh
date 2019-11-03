@@ -7,7 +7,7 @@ docker run \
   /bin/bash -c " \
   git clone \
     -b leankernel-9.0 \
-    https://github.com/cawilliamson/android_samsung_winner_kernel \
+    https://github.com/cawilliamson/android_kernel_samsung_winner \
     /usr/src/kernel && \
   cd /usr/src/kernel && \
   bash build_kernel_${1}.sh && \
