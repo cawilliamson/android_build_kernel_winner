@@ -6,7 +6,7 @@ docker run \
   buildkernel \
   /bin/bash -c " \
   git clone \
-    -b master \
+    -b ${1:-master} \
     https://github.com/cawilliamson/android_kernel_samsung_winnerx \
     /usr/src/kernel && \
   cd /usr/src/kernel && \
