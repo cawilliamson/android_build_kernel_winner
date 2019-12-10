@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C
 
-RUN apt -y update
+RUN apt update
 RUN apt -y dist-upgrade
 RUN apt -y install \
   bc \
@@ -14,7 +14,8 @@ RUN apt -y install \
   python \
   python-pip \
   python3 \
-  wget
+  wget \
+  zip
 
 RUN pip install gdown
 
