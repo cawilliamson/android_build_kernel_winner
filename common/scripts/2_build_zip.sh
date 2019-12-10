@@ -13,8 +13,10 @@ cp -fv \
   /usr/src/kernel/arch/arm64/boot/Image-dtb \
   /usr/src/anykernel3/zImage
 
+# cleanup previous zips
+rm -f /out/*.zip
+
 # create zip file
 pushd /usr/src/anykernel3
-  rm -f /out/leanKernel_$(date +%d-%m-%Y).zip
-  zip -r9 /out/leanKernel_$(date +%d-%m-%Y).zip * -x .git README.md *placeholder
+  zip -r9 /out/leanKernel.zip * -x .git README.md *placeholder
 popd
